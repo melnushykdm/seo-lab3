@@ -28,7 +28,7 @@
             padding: 40px 0;
             background-color: #f8fafc;
         }
-        .hero-section img {
+        .hero-section picture img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
@@ -45,7 +45,7 @@
             margin-bottom: 40px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        .service-card img {
+        .service-card picture img {
             max-width: 100%;
             height: auto;
             border-radius: 6px;
@@ -72,7 +72,11 @@
         <section class="hero-section">
             <h2>Виведемо ваш бізнес в ТОП-1 Google</h2>
             <p>Ми проводимо комплексний аналіз Core Web Vitals, оптимізуємо швидкість завантаження та налаштовуємо внутрішню перелінковку.</p>
-            <img src="images/hero.jpg" alt="Головний банер CyberSEO">
+            
+            <picture>
+                <source srcset="images/hero.webp" type="image/webp">
+                <img src="images/hero.jpg" alt="Головне зображення банера CyberSEO" width="1000" height="500">
+            </picture>
         </section>
 
         <section class="services-section">
@@ -81,13 +85,21 @@
             <div class="service-card">
                 <h3>1. Внутрішня пошукова оптимізація (On-Page SEO)</h3>
                 <p>Оптимізація метатегів Title, Description, впровадження семантичної мікророзмітки Schema.org (Organization, FAQPage) для отримання розширених сніпетів у видачі.</p>
-                <img src="images/service1.jpg" alt="Послуга внутрішньої оптимізації сайту">
+                
+                <picture>
+                    <source srcset="images/service1.webp" type="image/webp">
+                    <img src="images/service1.jpg" alt="Послуга внутрішньої оптимізації сайту" width="800" height="450" loading="lazy">
+                </picture>
             </div>
 
             <div class="service-card">
                 <h3>2. Технічний аудит та швидкість (Technical SEO)</h3>
                 <p>Стиснення медіафайлів, конвертація у WebP, налаштування відкладеного завантаження (Lazy Loading) та конфігурація інструкцій для пошукових роботів.</p>
-                <img src="images/service2.jpg" alt="Технічний SEO аудит швидкості">
+                
+                <picture>
+                    <source srcset="images/service2.webp" type="image/webp">
+                    <img src="images/service2.jpg" alt="Технічний SEO аудит швидкості" width="800" height="450" loading="lazy">
+                </picture>
             </div>
 
         </section>
